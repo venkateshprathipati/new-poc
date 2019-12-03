@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">psteels</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Name</string>
+    <string name="nav_header_subtitle">Email</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="some_error">Something went wrong</string>
+
+    <!--Login Validation-->
+    <string name="empty_email">Please provide a non empty username.</string>
+    <string name="invalid_email">Please provide a valid email.</string>
+    <string name="empty_password">Please provide a non empty password.</string>
+    <string name="route_plan">Route Plan</string>
+    <string name="start_trip">Start Trip</string>
+    <string name="meetings">Meetings Scheduled</string>
+    <string name="sync">Synchronization</string>
+    <string name="route_map">Route Map</string>
+    <string name="log_out">Sign Out</string>
+    <string name="empty_customer">Please provide a non empty customer name.</string>
+
+    <!--Drawer-->
+    <string name="open_drawer">Drawer Open</string>
+    <string name="close_drawer">Drawer Close</string>
+
+    <!--Bottom navigation-->
+    <string name="dashboard">Dashboard</string>
+    <string name="title_transaction">Transactions</string>
+    <string name="title_quicklookup">Quicklookup</string>
+    <string name="title_account">Account</string>
+    <string name="title_reports">Reports</string>
+    <string name="default_value">0</string>
+    <string name="arc_heading">Achieved</string>
+    <string name="sche_heading">Scheduled</string>
+    <string name="deal_heading">Dealer Visit</string>
+    <string name="inf_heading">Influencer Visit</string>
+    <string name="leads_heading">Leads Tracker</string>
+    <string name="visit_heading">Visits</string>
+    <string name="activity_heading">Activities</string>
+    <string name="receipt_heading">Reciept</string>
+    <string name="amt_heading">Amount</string>
+    <string name="count_heading">Count</string>
+    <string name="voc_heading">Vouchers</string>
+    <string name="out_bal">Total outstanding</string>
+
+    <string name="Rs">\u20B9</string>
+
+    <!--sales order-->
+    <string name="customer_name">Customer name</string>
+    <string name="show_error">Show Error</string>
+    <string name="sync_order">Sync On Process</string>
+    <string name="sync_so">Sync</string>
+    <string name="offline_order">Offline Order</string>
+    <string name="build_so">Build Order</string>
+
+    <!--Login-->
+    <string name="user_id">User Id</string>
+    <string name="password">Password</string>
+    <string name="db">Database</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="sign_in">Sign In</string>
+
+    <!--Build order-->
+    <string name="customer_ref">Reference *</string>
+    <string name="shipping_address">Shipping address</string>
+    <string name="billing_address">Billing Address</string>
+    <string name="remarks">Remarks *</string>
+    <string name="priority">Enter your priority *</string>
+    <string name="payment_date">Payment date</string>
+    <string name="document_date">Document date</string>
+    <string name="delivery_date">Delivery date</string>
+    <string name="posting_date">Posting date</string>
+    <string name="btn_add_row">Add Row</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="item_name">Item Name</string>
+    <string name="select_item_name">Select item </string>
+    <string name="qty">Quantity</string>
+    <string name="unit_price">Unit Price</string>
+    <string name="uom">UOM</string>
+    <string name="warehouse">Warehouse</string>
+    <string name="total_price">Total Price</string>
+    <string name="remove">Remove</string>
+    <string name="target">Target balance</string>
+    <string name="vouchers">Receipts</string>
+
+    <!--Synchronization-->
+    <string name="sync_dashboard">Sync Dashboard</string>
+    <string name="zero">0</string>
+    <string name="email">Common Email Id</string>
+    <string name="company">Company</string>
+    <string name="cheques">Cheque Collections</string>
+    <string name="customers">SQ/SO Customers</string>
+    <string name="tax_code">Taxcode</string>
+    <string name="address">Ship/Bill Address</string>
+    <string name="next">NEXT</string>
+    <string name="reg_email">Registered email id</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_reset">Reset</string>
+    <string name="database">Database</string>
+    <string name="notification">Notifications</string>
+
+    <!--play store-->
+    <string name="app_google_play_store_link">"https://play.google.com/store/apps/details?id="</string>
+    <string name="app_market_link">"market://details?id="</string>
+    <string name="add_order">Order Details</string>
+    <string name="poc">Welcome to POC</string>
+
+
+</resources>
