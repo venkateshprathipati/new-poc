@@ -7,7 +7,6 @@ import com.venky.wiprotask.BuildConfig;
 import com.venky.wiprotask.R;
 import com.venky.wiprotask.data.BaseDataManager;
 import com.venky.wiprotask.data.DataManager;
-import com.venky.wiprotask.data.db.AppDatabase;
 import com.venky.wiprotask.data.network.ApiService;
 import com.venky.wiprotask.data.network.RestApiHelper;
 import com.venky.wiprotask.data.network.RestApiManager;
@@ -60,13 +59,6 @@ public class AppModule {
         return Constants.DB_NAME;
     }
 
-
-    @Provides
-    @ApiInfo
-    String provideApiKey() {
-        return BuildConfig.DB_KEY;
-    }
-
     @Provides
     @PreferenceInfo
     String providePreferenceName() {
@@ -78,14 +70,6 @@ public class AppModule {
     DataManager provideDataManager(BaseDataManager mDataManager) {
         return mDataManager;
     }
-
-
-    @Provides
-    @Singleton
-    AppDatabase provideAppDatabase() {
-        return AppDatabase.getDatabaseInstance(mApplication);
-    }
-
 
     @Provides
     @Singleton

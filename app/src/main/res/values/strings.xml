@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">psteels</string>
+    <string name="app_name">Task</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Name</string>
@@ -12,7 +12,7 @@
     <string name="empty_email">Please provide a non empty username.</string>
     <string name="invalid_email">Please provide a valid email.</string>
     <string name="empty_password">Please provide a non empty password.</string>
-    <string name="route_plan">Route Plan</string>
+    <string name="home">Home</string>
     <string name="start_trip">Start Trip</string>
     <string name="meetings">Meetings Scheduled</string>
     <string name="sync">Synchronization</string>
@@ -105,6 +105,11 @@
     <string name="app_market_link">"market://details?id="</string>
     <string name="add_order">Order Details</string>
     <string name="poc">Welcome to POC</string>
+
+    <!--empty state-->
+    <string name="empty_screen">We do not have anything\nhere right now.</string>
+    <string name="please_retry">Please Retry</string>
+    <string name="retry">Retry</string>
 
 
 </resources>

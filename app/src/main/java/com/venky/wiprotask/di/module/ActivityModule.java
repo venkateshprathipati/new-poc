@@ -5,6 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 
 import com.venky.wiprotask.di.ActivityContext;
+import com.venky.wiprotask.ui.itemdetails.ItemDetailsAdapter;
+import com.venky.wiprotask.ui.itemdetails.ItemDetailsFragment;
+import com.venky.wiprotask.ui.itemdetails.ItemDetailsMvpPresenter;
+import com.venky.wiprotask.ui.itemdetails.ItemDetailsMvpView;
+import com.venky.wiprotask.ui.itemdetails.ItemDetailsPresenter;
+import com.venky.wiprotask.ui.main.MainMvpPresenter;
+import com.venky.wiprotask.ui.main.MainMvpView;
+import com.venky.wiprotask.ui.main.MainPresenter;
 import com.venky.wiprotask.utils.rx.AppSchedulerProvider;
 import com.venky.wiprotask.utils.rx.SchedulerProvider;
 
@@ -54,5 +62,19 @@ public class ActivityModule {
         return new LinearLayoutManager(activity);
     }
 
+    @Provides
+    ItemDetailsAdapter providesAdapter(){
+        return new ItemDetailsAdapter(new ArrayList<>());
+    }
+
+    @Provides
+    MainMvpPresenter<MainMvpView> provideTitles(MainPresenter<MainMvpView> presenter){
+    return presenter;
+    }
+
+    @Provides
+    ItemDetailsMvpPresenter<ItemDetailsMvpView> providesItem(ItemDetailsPresenter<ItemDetailsMvpView> presenter){
+        return presenter;
+    }
 
 }

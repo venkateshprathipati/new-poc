@@ -1,5 +1,7 @@
 package com.venky.wiprotask.data.network;
 
+import com.venky.wiprotask.data.network.model.TitleResponseModel;
+
 import java.util.List;
 
 import io.reactivex.Single;
@@ -9,5 +11,5 @@ import io.reactivex.Single;
  */
 public interface RestApiHelper {
 
-
+    Single<TitleResponseModel> getTitleDetails();
 }

@@ -55,9 +55,10 @@ public class SplashActivity extends BaseActivity {
     class splash extends TimerTask {
         @Override
         public void run() {
-            Intent i = new Intent(SplashActivity.this, MainActivity.class);
-            startActivity(i);
+            Intent intent = MainActivity.getStartIntent(SplashActivity.this);
+            startActivity(intent);
             finish();
+
         }
 
     }

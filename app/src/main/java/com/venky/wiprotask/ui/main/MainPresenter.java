@@ -1,5 +1,7 @@
 package com.venky.wiprotask.ui.main;
 
+import android.util.Log;
+
 import com.venky.wiprotask.data.DataManager;
 import com.venky.wiprotask.ui.base.BasePresenter;
 import com.venky.wiprotask.utils.rx.SchedulerProvider;
@@ -22,34 +24,10 @@ public class MainPresenter<V extends MainMvpView> extends BasePresenter<V> imple
         super(dataManager, schedulerProvider, compositeDisposable);
     }
 
-
     @Override
     public void onNavMenuCreated() {
         if (!isViewAttached()) {
             return;
         }
-
-        final String currentUserName = getDataManager().getUserName();
-//        Log.e(TAG,getDataManager().getUserName());
-        if (currentUserName != null && !currentUserName.isEmpty()) {
-            getMvpView().updateUserName(currentUserName);
-        }
-
-        final String currentUserEmail = getDataManager().getUserEmail();
-       // Log.e(TAG,getDataManager().getUserEmail());
-        if (currentUserEmail != null && !currentUserEmail.isEmpty()) {
-            getMvpView().updateUserEmail(currentUserEmail);
-        }
-
-    }
-
-    @Override
-    public void openSynchronizationActivity() {
-        getMvpView().navigateToSync();
-    }
-
-    @Override
-    public void onDrawerOptionLogoutClick() {
-
     }
 }

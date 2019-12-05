@@ -11,10 +11,4 @@ import com.venky.wiprotask.ui.base.MvpPresenter;
 public interface MainMvpPresenter<V extends MainMvpView> extends MvpPresenter<V> {
 
     void onNavMenuCreated();
-
-    void openSynchronizationActivity();
-
-    void onDrawerOptionLogoutClick();
-
-
 }

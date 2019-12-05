@@ -1,10 +1,8 @@
 package com.venky.wiprotask.data;
 
 import android.content.Context;
-
-
-import com.venky.wiprotask.data.db.AppDatabase;
 import com.venky.wiprotask.data.network.RestApiHelper;
+import com.venky.wiprotask.data.network.model.TitleResponseModel;
 import com.venky.wiprotask.data.prefe.PreferenceHelper;
 import com.venky.wiprotask.di.AppContext;
 
@@ -26,17 +24,14 @@ public class BaseDataManager implements DataManager {
 
 
     private final Context mContext;
-    private final AppDatabase mDatabase;
     private final PreferenceHelper mPreferencesHelper;
     private final RestApiHelper mApiHelper;
 
     @Inject
     public BaseDataManager(@AppContext Context context,
-                           AppDatabase database,
                            PreferenceHelper preferencesHelper,
                            RestApiHelper apiHelper) {
         mContext = context;
-        mDatabase = database;
         mPreferencesHelper = preferencesHelper;
         mApiHelper = apiHelper;
     }
@@ -46,4 +41,8 @@ public class BaseDataManager implements DataManager {
 
     }
 
+    @Override
+    public Single<TitleResponseModel> getTitleDetails() {
+        return mApiHelper.getTitleDetails();
+    }
 }

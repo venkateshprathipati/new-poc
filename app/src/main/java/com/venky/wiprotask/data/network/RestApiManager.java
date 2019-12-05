@@ -1,5 +1,7 @@
 package com.venky.wiprotask.data.network;
 
+import com.venky.wiprotask.data.network.model.TitleResponseModel;
+
 import java.util.List;
 
 import javax.inject.Inject;
@@ -22,4 +24,8 @@ public class RestApiManager implements RestApiHelper  {
     }
 
 
+    @Override
+    public Single<TitleResponseModel> getTitleDetails() {
+        return mService.getTitleDetails();
+    }
 }
